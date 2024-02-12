@@ -24,13 +24,7 @@
     <h2 class="text-center mt-2 mb-4">open positions </h2>
     <div >
        {% for job in jobs %}
-  <div style="margin-bottom:16px;">
-    <h4 style="color:rgb(200,120,200);margin-bottom:6px">{{job["role"]}}
-  </h4>
-    <div><b>Location: </b>{{job["location"]}}  </div>
-    
-  
-  </div>
+  {% include "jobitem.html" %}
 {% endfor %}
     </div>
       <div  class="text-center mt-2 mb-4">
